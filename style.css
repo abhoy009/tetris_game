@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2e2e2e; /* Darker grey for a cleaner look */
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .header {
+    margin: 10px 0;
+    color: #f5f5f5; /* Lighter font color for visibility */
+  }
+  
+  .button {
+    background: #008b8b; /* Slightly lighter darkcyan */
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.3) 4px 6px 4px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #006666;
+    box-shadow: rgba(0, 0, 0, 0.5) 6px 8px 6px;
+  }
+  
+  .container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .grid {
+    width: 200px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f7f7a3; /* Soft yellow for better contrast */
+    border: 2px solid #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin-right: 30px;
+  }
+  
+  .grid div {
+    height: 20px;
+    width: 20px;
+    border: 1px solid #d3d3d3; /* Subtle grid line */
+  }
+  
+  .tetromino {
+    background-color: #1e90ff; /* Vivid blue to distinguish tetromino pieces */
+  }
+  
+  .mini-grid {
+    width: 80px;
+    height: 80px;
+    margin-left: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f7f7a3;
+    border: 2px solid #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .mini-grid div {
+    height: 20px;
+    width: 20px;
+    border: 1px solid #d3d3d3;
+  }
+  
+  .taken {
+    background-color: #333; /* Dark color to indicate taken spaces */
+  }
+  
+  .container div div,
+  .container .grid div,
+  .container .mini-grid div {
+    box-sizing: border-box;
+  }
